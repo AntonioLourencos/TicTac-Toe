@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.Field {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  border-radius: 8px;
+  background: #dbdbdb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.Field:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.Field span {
+  font-size: 1.5rem;
+}
+
+.Field span.O {
+  color: red;
+}
+
+.Field span.X {
+  color: blue;
+}
+
+.StatsBar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StatsBar span {
+  font-size: 1.3rem;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 300ms;
+}
+
+.StatsBar span:hover {
+  background: #f6f6f6;
+  transition: 300ms;
+  cursor: default;
+}
